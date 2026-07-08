@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Rotina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📅 Organizador de Rotina</h1>
+
+    <section>
+        <h2>Rotina Diária</h2>
+        <div class="input-group">
+            <input type="time" id="horaTarefa">
+            <input type="text" id="tarefa" placeholder="Nova tarefa">
+            <button onclick="adicionarTarefa()">Adicionar</button>
+        </div>
+        <ul id="listaTarefas"></ul>
+    </section>
+
+    <section>
+        <h2>Hábitos</h2>
+        <label><input type="checkbox" class="habito"> Beber água</label>
+        <label><input type="checkbox" class="habito"> Exercício</label>
+        <label><input type="checkbox" class="habito"> Ler 20 minutos</label>
+    </section>
+
+    <section>
+        <h2>Checklist Matinal</h2>
+        <label><input type="checkbox" class="check"> Arrumar a cama</label>
+        <label><input type="checkbox" class="check"> Escovar os dentes</label>
+        <label><input type="checkbox" class="check"> Café da manhã</label>
+    </section>
+
+    <section>
+        <h2>Checklist Noturno</h2>
+        <label><input type="checkbox" class="check"> Tomar banho</label>
+        <label><input type="checkbox" class="check"> Preparar roupas</label>
+        <label><input type="checkbox" class="check"> Dormir cedo</label>
+    </section>
+
+    <section>
+        <h2>Estatísticas</h2>
+        <p>Concluído: <span id="porcentagem">0%</span></p>
+        <progress id="barra" value="0" max="100"></progress>
+    </section>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
